@@ -2,6 +2,10 @@
 
 This is a demo project for Spring Boot with JPA.
 
+## Email Configuration
+
+Many Spring Boot applications need to send emails, typically using Gmail's SMTP server. If you're configuring email functionality in this or any Spring Boot application, you'll need to properly set up your Gmail credentials.
+
 ## How to Change Gmail Password
 
 If you need to change your Gmail password (for example, if you're using Gmail SMTP for email functionality), follow these steps:

@@ -62,7 +62,7 @@ For applications that need to access your Gmail account, it's recommended to use
    ```
    
    **Security Note:** Never commit credentials directly to version control. Instead, use:
-   - Environment variables:
+   - Environment variables (set these in your system environment, IDE configuration, or deployment platform):
    ```properties
    spring.mail.username=${MAIL_USERNAME}
    spring.mail.password=${MAIL_PASSWORD}
@@ -108,7 +108,7 @@ For applications that need to access your Gmail account, it's recommended to use
 
 **Can't find App Passwords option:**
 - You must have 2-Step Verification enabled first
-- For Google Workspace accounts, the App Passwords feature may be disabled by your administrator through workspace security settings
+- For Google Workspace accounts, the App Passwords feature may be disabled by your administrator through Workspace security settings
 - If using a work/school account, contact your Google Workspace administrator for assistance
 
 ## Project Setup

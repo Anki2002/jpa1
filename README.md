@@ -55,20 +55,22 @@ For applications that need to access your Gmail account, it's recommended to use
    - Use this password in your application instead of your regular Gmail password
 
 4. **Use the App Password in Your Application**
-   - Update your `application.properties` with the app password:
-   ```properties
-   spring.mail.username=your-email@gmail.com
-   spring.mail.password=your-16-character-app-password
-   ```
    
-   **Security Note:** Never commit credentials directly to version control. Instead, use:
-   - Environment variables (set these in your system environment, IDE configuration, or deployment platform):
+   **Security Note:** Never commit credentials directly to version control. Use one of these secure methods:
+   
+   - **Recommended:** Environment variables (set these in your system environment, IDE configuration, or deployment platform):
    ```properties
    spring.mail.username=${MAIL_USERNAME}
    spring.mail.password=${MAIL_PASSWORD}
    ```
    - Or use `application-local.properties` (excluded from git) for local development
    - Or use Spring Cloud Config or external secret management for production
+   
+   For reference, the basic configuration format in `application.properties` would be:
+   ```properties
+   spring.mail.username=your-email@gmail.com
+   spring.mail.password=your-16-character-app-password
+   ```
 
 ### Security Best Practices
 

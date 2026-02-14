@@ -95,8 +95,8 @@ For applications that need to access your Gmail account, it's recommended to use
 
 **Can't find App Passwords option:**
 - You must have 2-Step Verification enabled first
-- App Passwords are not available for G Suite accounts with certain security policies
-- Contact your G Suite administrator if using a work/school account
+- App Passwords are not available for Google Workspace accounts with certain security policies
+- Contact your Google Workspace administrator if using a work/school account
 
 ## Project Setup
 
